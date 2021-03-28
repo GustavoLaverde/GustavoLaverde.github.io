@@ -1,11 +1,12 @@
-const ipad = window.matchMedia('screen and (max-width: 767px)');
+const ipad = window.matchMedia('screen and (max-width: 0px)');
         // console.log("hola mundo");
         const menu = document.querySelector(".menu");
         // console.log(menu);
         const burgerButton = document.querySelector("#burger-menu");
         // console.log(burgerButton);
         
-        validation();        
+        ipad.addListener(validation)
+        
         function validation(event){
             console.log(event.matches);
             if (event.matches){
