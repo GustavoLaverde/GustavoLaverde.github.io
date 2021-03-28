@@ -1,4 +1,4 @@
-const ipad = window.matchMedia('screen and (max-width: 0px)');
+const ipad = window.matchMedia('screen and (max-width: 767px)');
         // console.log("hola mundo");
         const menu = document.querySelector(".menu");
         // console.log(menu);
