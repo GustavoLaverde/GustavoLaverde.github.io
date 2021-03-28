@@ -5,7 +5,7 @@ const ipad = window.matchMedia('screen and (max-width: 767px)');
         const burgerButton = document.querySelector("#burger-menu");
         // console.log(burgerButton);
         
-        ipad.addListener(validation)
+        // ipad.addListener(validation)
         
         function validation(event){
             console.log(event.matches);
