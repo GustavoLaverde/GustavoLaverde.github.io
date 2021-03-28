@@ -1,20 +1,20 @@
-const ipad = window.matchMedia('screen and (max-width: 767px)');
+// const ipad = window.matchMedia('screen and (max-width: 767px)');
         // console.log("hola mundo");
         const menu = document.querySelector(".menu");
         // console.log(menu);
         const burgerButton = document.querySelector("#burger-menu");
         // console.log(burgerButton);
         
-        ipad.addListener(validation)
+        // ipad.addListener(validation)
         
-        function validation(event){
-            console.log(event.matches);
-            if (event.matches){
+        // function validation(event){
+        //     console.log(event.matches);
+        //     if (event.matches){
                 burgerButton.addEventListener('click', hideShow);
-            }else{
-                burgerButton.removeEventListener('click', hideShow);
-            }
-        }
+        //     }else{
+        //         burgerButton.removeEventListener('click', hideShow);
+        //     }
+        // }
 
         function hideShow(){
             if (menu.classList.contains("is-active")){
